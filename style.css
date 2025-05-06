@@ -108,6 +108,29 @@ a:hover {
   text-decoration: underline;
 }
 
+.job-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.job-header .date {
+  font-weight: bold;
+  color: #666;
+}
+
+.job-header .role {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.job-header .org {
+  font-size: 15px;
+  color: #555;
+}
+
+
 /* Responsive */
 @media screen and (max-width: 768px) {
   .container {
