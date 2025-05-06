@@ -13,96 +13,71 @@
       background-color: #fff;
       color: #333;
     }
-
     .container {
       display: flex;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 40px 20px;
-      flex-wrap: wrap;
+      gap: 40px;
     }
-
     .sidebar {
       flex: 1;
       min-width: 250px;
-      padding-right: 40px;
-      border-right: 1px solid #ddd;
       text-align: center;
+      border-right: 1px solid #ddd;
+      padding-right: 30px;
     }
-
-    .sidebar img.profile {
+    .profile {
       width: 200px;
       height: 200px;
-      border-radius: 50%;
       object-fit: cover;
+      border-radius: 8px;
       margin-bottom: 20px;
-      border: 3px solid #007acc;
     }
-
     .main-content {
       flex: 2;
       min-width: 300px;
-      padding-left: 40px;
+      padding-left: 30px;
     }
-
     h1 {
       font-size: 26px;
-      margin-top: 10px;
       color: #007acc;
     }
-
     h2 {
       font-size: 22px;
       margin-top: 30px;
-      border-bottom: 2px solid #ddd;
+      border-bottom: 2px solid #eee;
       padding-bottom: 5px;
     }
-
-    ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-    }
-
     .item {
       margin-bottom: 20px;
     }
-
-    .job-header {
-      margin-bottom: 5px;
-    }
-
-    .job-header .date {
+    .date-range {
       font-weight: bold;
       color: #666;
+      display: block;
+      margin-bottom: 5px;
     }
-
-    .job-header .role {
-      font-size: 16px;
-      font-weight: 600;
-      color: #000;
+    .position-title {
+      font-weight: bold;
     }
-
-    .job-header .org {
-      font-size: 15px;
-      color: #555;
+    .institution {
+      font-style: italic;
+      margin-bottom: 5px;
     }
-
+    ul, p {
+      margin-bottom: 10px;
+    }
+    ul li {
+      margin-bottom: 5px;
+    }
     a {
       color: #007acc;
       text-decoration: none;
       font-weight: bold;
     }
-
     a:hover {
       text-decoration: underline;
-    }
-
-    p {
-      margin-bottom: 15px;
     }
   </style>
 </head>
@@ -118,20 +93,14 @@
 
     <div class="main-content">
       <h2>About Me</h2>
-      <p>
-        I am a responsible and dedicated self-starter who thrives in both independent and collaborative environments. With a strong work ethic and a drive to achieve the best outcomes, I take initiative, communicate effectively, and adapt quickly to new challenges.
-      </p>
-      <p>
-        My current research focuses on optimizing parameters for thermal building models using grey-box techniques. I aim to develop scalable representations of HVAC dynamics that can be integrated into day-ahead operational planning for TSOs/DSOs. This includes estimating thermal and behavioral parameters, formulating tractable optimization models, and supporting system-level goals such as cost-efficient energy use through aggregated building flexibility.
-      </p>
+      <p>I am a responsible and dedicated self-starter who thrives in both independent and collaborative environments. With a strong work ethic and a drive to achieve the best outcomes, I take initiative, communicate effectively, and adapt quickly to new challenges.</p>
+      <p>My current research focuses on optimizing parameters for thermal building models using grey-box techniques. I aim to develop scalable representations of HVAC dynamics that can be integrated into day-ahead operational planning for TSOs/DSOs.</p>
 
       <h2>Experience</h2>
-
       <div class="item">
-        <div class="job-header">
-          <span class="date">2024–Present</span><br>
-          <span class="role">Graduate Research Assistant</span>, <span class="org">Washington State University</span>
-        </div>
+        <span class="date-range">2024–Present</span>
+        <div class="position-title">Graduate Research Assistant</div>
+        <div class="institution">Washington State University</div>
         <ul>
           <li>Optimizing parameters for thermal building models using grey-box modeling.</li>
           <li>Evaluating optimization techniques for parameter estimation.</li>
@@ -139,101 +108,26 @@
       </div>
 
       <div class="item">
-        <div class="job-header">
-          <span class="date">Sep 2023 – Dec 2023</span><br>
-          <span class="role">Deputy Manager – Energy Analyst</span>, <span class="org">Schneider Electric</span>
-        </div>
+        <span class="date-range">Sep 2023 – Dec 2023</span>
+        <div class="position-title">Deputy Manager – Energy Analyst</div>
+        <div class="institution">Schneider Electric</div>
         <ul>
-          <li>Analyzed and monitored energy markets across the US, Europe, and Australia.</li>
-          <li>Supported the sourcing team to enhance operational efficiency.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="job-header">
-          <span class="date">Jan 2023 – May 2023</span><br>
-          <span class="role">Research Intern</span>, <span class="org">BIT Mesra</span>
-        </div>
-        <ul>
-          <li>Designed and implemented an Improved Linear Sinusoidal Tracer (ILST) control algorithm for 3-phase VSCs in grid-tied PVs.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="job-header">
-          <span class="date">Jul 2022 – Dec 2022</span><br>
-          <span class="role">Research Intern</span>, <span class="org">BIT Mesra</span>
-        </div>
-        <ul>
-          <li>Designed a P–Q decoupled control for a battery-operated quasi-Z source inverter in grid-tied PVs.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="job-header">
-          <span class="date">May 2022 – Jul 2022</span><br>
-          <span class="role">Research Intern</span>, <span class="org">IIT Hyderabad</span>
-        </div>
-        <ul>
-          <li>Developed MATLAB code for MPPT under partial/uniform shading and implemented an ANN to detect shading in PV arrays.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="job-header">
-          <span class="date">Mar 2022 – May 2022</span><br>
-          <span class="role">Research Intern</span>, <span class="org">Nottingham University, UK</span>
-        </div>
-        <ul>
-          <li>Used PSO in MATLAB for optimal capacitor placement and sizing in IEEE 34-bus system.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="job-header">
-          <span class="date">Nov 2021 – Dec 2021</span><br>
-          <span class="role">Research Intern</span>, <span class="org">IIT Patna</span>
-        </div>
-        <ul>
-          <li>Operated a 3-phase inverter on DSpace using ADC/DAC in a closed-loop for speed-controlled motor operation.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="job-header">
-          <span class="date">May 2021 – Jun 2021</span><br>
-          <span class="role">Research Intern</span>, <span class="org">Woosong University, South Korea</span>
-        </div>
-        <ul>
-          <li>Explored microgrid architectures, classification, and consumer-end operational challenges.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="job-header">
-          <span class="date">Mar 2021 – May 2021</span><br>
-          <span class="role">Research Intern</span>, <span class="org">Paderborn University, Germany</span>
-        </div>
-        <ul>
-          <li>Stored and analyzed microgrid data using SQL and optimized architectures for East-African applications.</li>
+          <li>Analyzed and monitored energy markets across US, Europe, and Australia.</li>
+          <li>Supported sourcing team in enhancing operational efficiency.</li>
         </ul>
       </div>
 
       <h2>Education</h2>
-
       <div class="item">
-        <div class="job-header">
-          <span class="date">2024–Present</span><br>
-          <span class="role">PhD, Electrical Engineering</span>, <span class="org">Washington State University</span>
-        </div>
+        <span class="date-range">2024–Present</span>
+        <div class="position-title">PhD, Electrical Engineering</div>
+        <div class="institution">Washington State University</div>
         <p>GPA: 3.8/4.0</p>
       </div>
-
       <div class="item">
-        <div class="job-header">
-          <span class="date">2019–2023</span><br>
-          <span class="role">B.Tech, Electrical and Electronics Engineering</span>, <span class="org">BIT Mesra</span>
-        </div>
+        <span class="date-range">2019–2023</span>
+        <div class="position-title">B.Tech, Electrical and Electronics Engineering</div>
+        <div class="institution">BIT Mesra</div>
         <p>GPA: 8.1/10</p>
       </div>
 
